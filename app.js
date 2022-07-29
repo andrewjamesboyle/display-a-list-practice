@@ -1,10 +1,11 @@
 // import functions and grab DOM elements
 const candiesListEl = document.getElementById('candies-list');
-const candiesListTwoEl = document.getElementById('candies-list-two');
+const bikesListEl = document.getElementById('bikes-list');
 
-import { candiesTwo } from './candies-data-two.js';
+import { bikes } from './bikes-data.js';
 import { candies } from './candies-data.js';
-import { renderCandy } from './render-one.js';
+import { renderCandy } from './renderCandy.js';
+import { renderBike } from './renderBike.js';
 
 // const candyEl = document.createElement('div');
 
@@ -13,15 +14,12 @@ for (let candy of candies) {
     candiesListEl.append(candyEl);
 }
 
-for (let candyTwo of candiesTwo) {
-    const candyTwoEl = document.createElement('div');
-    candyTwoEl.textcontent = candyTwo;
-    candiesListTwoEl.append(candyTwoEl);
+for (let bike of bikes) {
+    const bikeBrandEl = renderBike(bike);
+    bikesListEl.append(bikeBrandEl);
 }
 
-function renderCandyTwo(candiesTwo) {};
-
-
+console.log(bikesListEl);
 
 // initialize global state
 
