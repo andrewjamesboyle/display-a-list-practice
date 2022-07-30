@@ -15,20 +15,23 @@ import { renderBand } from './renderBand.js';
 for (let candy of candies) {
     const candyEl = renderCandy(candy);
     candiesListEl.append(candyEl);
-    candiesListEl.classList.add('candy-item');
+    candiesListEl.classList.add('candies');
 }
 
 for (let bike of bikes) {
     const bikeBrandEl = renderBike(bike);
     bikesListEl.append(bikeBrandEl);
+    bikesListEl.classList.add('bikes');
 }
 
 for (let car of cars) {
     const carEl = renderCar(car);
     carListEl.append(carEl);
+    carListEl.classList.add('cars');
 }
 
 for (let band of bands) {
     const bandsEl = renderBand(band);
     bandsListEl.append(bandsEl);
+    bandsListEl.classList.add('bands');
 }

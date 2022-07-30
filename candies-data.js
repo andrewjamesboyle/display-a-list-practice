@@ -1,7 +1,7 @@
 export const candies = [
-    'airheads', 
-    'warheads', 
-    'sour patch kids', 
-    'tootsie rolls', 
-    'chocolates'
+    'Airheads', 
+    'Warheads', 
+    'Sour Patch Kids', 
+    'Tootsie Rolls', 
+    'Hershey'
 ];

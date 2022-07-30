@@ -4,9 +4,9 @@ export function renderBike(anyBike) {
     const bikeModelEl = document.createElement('p');
     const bikeCategoryEl = document.createElement('p');
     bikeContainerEl.append(bikeBrandEl, bikeModelEl, bikeCategoryEl);
-    bikeBrandEl.textContent = anyBike.brand;
-    bikeModelEl.textContent = anyBike.model;
-    bikeCategoryEl.textContent = anyBike.category;
-    bikeContainerEl.classList.add('bike-container');
+    bikeBrandEl.textContent = `Brand: ${anyBike.brand}`;
+    bikeModelEl.textContent = `Model: ${anyBike.model}`;
+    bikeCategoryEl.textContent = `Category: ${anyBike.category}`;
+    bikeContainerEl.classList.add('bike-item');
     return bikeContainerEl;
 }

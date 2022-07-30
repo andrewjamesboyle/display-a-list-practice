@@ -1,5 +1,5 @@
 export function renderCandy(candy) {
     const candiesEl = document.createElement('div');
-    candiesEl.textContent = candy;
+    candiesEl.textContent = `Brand: ${candy}`;
     return candiesEl;   
 }
