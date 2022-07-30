@@ -1,17 +1,18 @@
-// import functions and grab DOM elements
 const candiesListEl = document.getElementById('candies-list');
 const bikesListEl = document.getElementById('bikes-list');
+const carListEl = document.getElementById('car-list');
 
 import { bikes } from './bikes-data.js';
 import { candies } from './candies-data.js';
 import { renderCandy } from './renderCandy.js';
 import { renderBike } from './renderBike.js';
-
-// const candyEl = document.createElement('div');
+import { cars } from './car-data.js';
+import { renderCar } from './renderCar.js';
 
 for (let candy of candies) {
     const candyEl = renderCandy(candy);
     candiesListEl.append(candyEl);
+    candiesListEl.classList.add('candy-item');
 }
 
 for (let bike of bikes) {
@@ -19,11 +20,8 @@ for (let bike of bikes) {
     bikesListEl.append(bikeBrandEl);
 }
 
-console.log(bikesListEl);
+for (let car of cars) {
+    const carEl = renderCar(car);
+    carListEl.append(carEl);
+}
 
-// initialize global state
-
-// set event listeners 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
