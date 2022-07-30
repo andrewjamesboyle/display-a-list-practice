@@ -1,6 +1,7 @@
 const candiesListEl = document.getElementById('candies-list');
 const bikesListEl = document.getElementById('bikes-list');
 const carListEl = document.getElementById('car-list');
+const bandsListEl = document.getElementById('band-list');
 
 import { bikes } from './bikes-data.js';
 import { candies } from './candies-data.js';
@@ -8,6 +9,8 @@ import { renderCandy } from './renderCandy.js';
 import { renderBike } from './renderBike.js';
 import { cars } from './car-data.js';
 import { renderCar } from './renderCar.js';
+import { bands } from './bands-data.js';
+import { renderBand } from './renderBand.js';
 
 for (let candy of candies) {
     const candyEl = renderCandy(candy);
@@ -25,3 +28,7 @@ for (let car of cars) {
     carListEl.append(carEl);
 }
 
+for (let band of bands) {
+    const bandsEl = renderBand(band);
+    bandsListEl.append(bandsEl);
+}
