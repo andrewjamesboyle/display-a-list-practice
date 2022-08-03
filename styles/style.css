@@ -67,6 +67,23 @@ p {
     margin: var(--gutter);
 }
   
+#candies-list {
+    display: flex;
+    flex-direction: column;
+}
+
+#bikes-list {
+    display: flex;
+}
+
+#car-list {
+    display: flex;
+}
+
+#band-list {
+    display: flex;
+}
+
 footer {
     position: fixed;
     width: 100%;
